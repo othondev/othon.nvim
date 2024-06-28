@@ -1,13 +1,16 @@
-local M = {}
+local plugins = require('othon.plugins')
+local mappings = require('othon.mappings')
+local options = require('othon.options')
 
-function M.load_mappings()
-  	vim.api.nvim_set_keymap("n", "<TAB>", ':lua print("oi oi oi")<CR>', { noremap = true, silent = true })
-  print('all mappings loaded')
-end
+return {
+  setup = function ()
+    mappings.load()
+    print('All mapped loaded')
 
-vim.schedule(function ()
-  M.load_mappings()
-end)
+    options.load()
+    print('All options loaded')
 
-return M
-
+    plugins.load()
+    print('All dependencies loaded')
+  end
+}
