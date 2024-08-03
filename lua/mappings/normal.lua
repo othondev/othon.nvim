@@ -1,7 +1,9 @@
 return {
   [";"] = { cmd = ":", desc = "CMD enter command mode" },
-  ["<A-1>"] = { cmd = ":Neotree git_status right toggle", desc = "Open changes files explore" },
-  ["<A-2>"] = { cmd = ":Neotree right toggle buffers", desc = "Open Buffers List" },
+  ["<A-1>"] = { cmd = ":Neotree filesystem right toggle", desc = "Open changes files explore" },
+  ["<A-2>"] = { cmd = ":Neotree buffers right toggle", desc = "Open changes files explore" },
+  ["<A-3>"] = { cmd = ":Neotree git_status right toggle", desc = "Open changes files explore" },
+  ["<A-4>"] = { cmd = ":Neotree right toggle document_symbols", desc = "Open Symbols List" },
   ["-"] = { cmd = "<CMD>Oil<CR>", desc = "Open parent directory" },
   ["<C-b>"] = { cmd = ":Neotree right toggle buffers", desc = "Open Buffers List" },
   ["<C-e>"] = { cmd = ":Telescope oldfiles", desc = "Search git files" },
