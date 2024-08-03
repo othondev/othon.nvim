@@ -44,11 +44,13 @@ return {
 
   {
     "stevearc/oil.nvim",
-    opts = {},
     dependencies = { "echasnovski/mini.icons" },
   },
 
-  "tpope/vim-fugitive",
+  {
+    "tpope/vim-fugitive",
+    cmd = { "G", "Git", "Gdiffsplit" },
+  },
 
   {
     "nvim-neo-tree/neo-tree.nvim",
