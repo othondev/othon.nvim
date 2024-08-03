@@ -21,7 +21,7 @@ return {
   ["<leader>gl"] = { cmd = ":DiffviewFileHistory", desc = "[G]it [L]og" },
   ["<leader>sc"] = { cmd = ":Changes", desc = "[S]earch on [C]hanges" },
   ["<leader>sg"] = { cmd = ":Telescope live_grep", desc = "Search with live grep" },
-  ["<leader>sn"] = { cmd = ":lua Search.NvimFiles()", desc = "[S]earch [N]eovim files" },
+  ["<leader>sn"] = { cmd = ":lua require('features').OpenNvimConfig()", desc = "[S]earch [N]eovim files" },
   ["[["] = { cmd = ":lua vim.diagnostic.goto_prev()", desc = "Previous error" },
   ["\\"] = { cmd = ":Neotree git_status right toggle", desc = "Open changes files explore" },
   ["]]"] = { cmd = ":lua vim.diagnostic.goto_next()", desc = "Next error" },
