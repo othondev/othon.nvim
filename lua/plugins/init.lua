@@ -30,8 +30,10 @@ return {
 
   {
     "tpope/vim-fugitive",
-    cmd = { "G", "Git", "Gdiffsplit" },
+    lazy = false,
   },
+
+  { "sindrets/diffview.nvim", lazy = false },
 
   {
     "nvim-neo-tree/neo-tree.nvim",
