@@ -22,4 +22,6 @@ return {
   ["[["] = { cmd = ":lua vim.diagnostic.goto_prev()", desc = "Previous error" },
   ["\\"] = { cmd = ":Neotree right toggle document_symbols", desc = "Open Symbols List" },
   ["]]"] = { cmd = ":lua vim.diagnostic.goto_next()", desc = "Next error" },
+  ["]c"] = { cmd = ":lua require'gitsigns'.next_hunk()", desc = "Next error" },
+  ["[c"] = { cmd = ":lua require'gitsigns'.prev_hunk()", desc = "Previous error" },
 }
