@@ -25,7 +25,6 @@ require("lazy").setup({
     end,
   },
 
-  --{ import = "plugins" },
   require("addons").GetPlugins(),
 }, lazy_config)
 
