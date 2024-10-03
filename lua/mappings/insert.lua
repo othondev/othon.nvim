@@ -1,3 +1,1 @@
-return {
-  ["jk"] = { cmd = "<ESC>" },
-}
+return {}
